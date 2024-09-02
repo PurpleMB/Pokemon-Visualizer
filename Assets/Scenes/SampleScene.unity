@@ -773,6 +773,7 @@ GameObject:
   m_Component:
   - component: {fileID: 829903855}
   - component: {fileID: 829903858}
+  - component: {fileID: 829903859}
   - component: {fileID: 829903857}
   - component: {fileID: 829903856}
   m_Layer: 5
@@ -863,7 +864,19 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 829903859}
+        m_TargetAssemblyTypeName: PokeInputField, Assembly-CSharp
+        m_MethodName: OnPokemonEntered
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnSubmit:
     m_PersistentCalls:
       m_Calls: []
@@ -938,6 +951,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 829903854}
   m_CullTransparentMesh: 1
+--- !u!114 &829903859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829903854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10f76493914d8cc4089ba4ba4e80c82c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pDic: {fileID: 1921253972}
+  _visualizer: {fileID: 1161490720}
 --- !u!1 &1119885559
 GameObject:
   m_ObjectHideFlags: 0
@@ -1010,6 +1037,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1161490719}
+  - component: {fileID: 1161490720}
   m_Layer: 0
   m_Name: PokemonVisualizer
   m_TagString: Untagged
@@ -1032,6 +1060,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1161490720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161490718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc8e6b83ab582846b006aa5b9c8503c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pokeImg: {fileID: 594355450}
+  _pokeText: {fileID: 1906914840}
 --- !u!1 &1176928818
 GameObject:
   m_ObjectHideFlags: 0
@@ -1740,6 +1782,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1921253970}
   - component: {fileID: 1921253971}
+  - component: {fileID: 1921253972}
   m_Layer: 0
   m_Name: PokemonDatabase
   m_TagString: Untagged
@@ -1775,8 +1818,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pokejson: {fileID: 4900000, guid: 9deb1d3785a641345aa82704f15c68c1, type: 3}
-  pokeList:
+  PokeList:
     pokes: []
+--- !u!114 &1921253972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921253969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8235ca39650c8c34a92af566a90b5e71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
