@@ -18,3 +18,5 @@ MonoBehaviour:
   resistances: []
   immunities:
   - Ghost
+  primColor: {r: 0.7075472, g: 0.7075472, b: 0.7075472, a: 1}
+  secColor: {r: 0.9150943, g: 0.91023827, b: 0.8503471, a: 1}

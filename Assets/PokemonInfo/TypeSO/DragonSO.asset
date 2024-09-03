@@ -23,3 +23,5 @@ MonoBehaviour:
   - Grass
   - Electric
   immunities: []
+  primColor: {r: 0.37254903, g: 0.4901961, b: 1, a: 1}
+  secColor: {r: 1, g: 0.40315747, b: 0.2688679, a: 1}

@@ -23,3 +23,5 @@ MonoBehaviour:
   - Grass
   immunities:
   - Ground
+  primColor: {r: 0.61960787, g: 0.86274517, b: 0.8352942, a: 1}
+  secColor: {r: 0.7740814, g: 0.6933962, b: 1, a: 1}

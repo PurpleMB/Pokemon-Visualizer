@@ -22,3 +22,5 @@ MonoBehaviour:
   - Dark
   immunities:
   - Dragon
+  primColor: {r: 1, g: 0.48584908, b: 0.6264715, a: 1}
+  secColor: {r: 1, g: 0.6273585, b: 0.9607747, a: 1}

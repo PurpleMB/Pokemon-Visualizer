@@ -12,6 +12,7 @@ public class Visualizer : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _pokeText;
 
     [SerializeField] private StatsDisplay _statsDisplay;
+    [SerializeField] private TypeDisplay _typeDisplay;
 
     private Pokemon _visualizedPoke;
 
@@ -37,6 +38,7 @@ public class Visualizer : MonoBehaviour
         _pokeText.text = _visualizedPoke.name.english;
 
         _statsDisplay.SetStatDisplay(pokemon.basestats);
+        _typeDisplay.SetDisplayedTyping(pokemon.type);
 
         return _visualizedPoke != oldPoke;
     }

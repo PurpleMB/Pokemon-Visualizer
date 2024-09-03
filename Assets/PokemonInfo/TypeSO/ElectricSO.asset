@@ -20,3 +20,5 @@ MonoBehaviour:
   - Electric
   - Steel
   immunities: []
+  primColor: {r: 0.93725497, g: 0.7607844, b: 0.09019608, a: 1}
+  secColor: {r: 1, g: 0.97346705, b: 0.43867922, a: 1}

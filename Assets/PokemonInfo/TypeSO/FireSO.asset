@@ -25,3 +25,5 @@ MonoBehaviour:
   - Ice
   - Fairy
   immunities: []
+  primColor: {r: 1, g: 0.331669, b: 0.051886797, a: 1}
+  secColor: {r: 1, g: 0.6463027, b: 0.06132078, a: 1}

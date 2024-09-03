@@ -22,3 +22,5 @@ MonoBehaviour:
   - Dark
   immunities:
   - Psychic
+  primColor: {r: 0.43137258, g: 0.34117648, b: 0.2784314, a: 1}
+  secColor: {r: 0.7150991, g: 0.615566, b: 0.8207547, a: 1}

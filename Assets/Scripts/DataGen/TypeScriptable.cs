@@ -10,4 +10,6 @@ public class TypeScriptable : ScriptableObject
     public string[] weaknesses;
     public string[] resistances;
     public string[] immunities;
+    public Color primColor;
+    public Color secColor;
 }

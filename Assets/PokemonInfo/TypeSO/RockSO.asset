@@ -25,3 +25,5 @@ MonoBehaviour:
   - Poison
   - Fire
   immunities: []
+  primColor: {r: 0.7607844, g: 0.61960787, b: 0.24313727, a: 1}
+  secColor: {r: 0.9339623, g: 0.8536063, b: 0.6828498, a: 1}

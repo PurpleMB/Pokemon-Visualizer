@@ -22,3 +22,5 @@ MonoBehaviour:
   - Water
   - Ice
   immunities: []
+  primColor: {r: 0.10234957, g: 0.34281868, b: 0.8679245, a: 1}
+  secColor: {r: 0.5529412, g: 0.9040687, b: 1, a: 1}

@@ -22,3 +22,5 @@ MonoBehaviour:
   immunities:
   - Normal
   - Fighting
+  primColor: {r: 0.7490196, g: 0.2627451, b: 0.7254902, a: 1}
+  secColor: {r: 0.6571734, g: 0.512994, b: 0.8301887, a: 1}

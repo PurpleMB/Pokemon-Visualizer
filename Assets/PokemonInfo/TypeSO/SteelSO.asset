@@ -30,3 +30,5 @@ MonoBehaviour:
   - Fairy
   immunities:
   - Poison
+  primColor: {r: 0.60898006, g: 0.60898006, b: 0.8018868, a: 1}
+  secColor: {r: 0.8415806, g: 0.8415806, b: 0.9056604, a: 1}

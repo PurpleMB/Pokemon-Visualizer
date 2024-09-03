@@ -22,3 +22,5 @@ MonoBehaviour:
   - Rock
   immunities:
   - Electric
+  primColor: {r: 1, g: 0.783382, b: 0.16470587, a: 1}
+  secColor: {r: 0.754717, g: 0.66001487, b: 0.3809185, a: 1}

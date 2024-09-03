@@ -21,3 +21,5 @@ MonoBehaviour:
   - Fighting
   - Psychic
   immunities: []
+  primColor: {r: 0.9725491, g: 0.19607845, b: 0.6313726, a: 1}
+  secColor: {r: 0.9843138, g: 0.60784316, b: 0.7490196, a: 1}
