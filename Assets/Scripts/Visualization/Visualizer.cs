@@ -11,6 +11,8 @@ public class Visualizer : MonoBehaviour
     [SerializeField] private Image _pokeImg;
     [SerializeField] private TextMeshProUGUI _pokeText;
 
+    [SerializeField] private StatsDisplay _statsDisplay;
+
     private Pokemon _visualizedPoke;
 
     public bool SetVisualizedPokemon(Pokemon pokemon)
@@ -19,7 +21,7 @@ public class Visualizer : MonoBehaviour
         Pokemon oldPoke = _visualizedPoke;
         _visualizedPoke = pokemon;
 
-        string imgPath = $"{_visualizedPoke.id.ToString("000")}";
+        string imgPath = $"Images/{_visualizedPoke.id.ToString("000")}";
         Debug.Log("Visualizer attempting to load image at path: " + imgPath);
         /*
         Texture2D pokeTex = Resources.Load<Texture2D>(imgPath);
@@ -33,6 +35,8 @@ public class Visualizer : MonoBehaviour
         _pokeImg.sprite = pokeSprite;
 
         _pokeText.text = _visualizedPoke.name.english;
+
+        _statsDisplay.SetStatDisplay(pokemon.basestats);
 
         return _visualizedPoke != oldPoke;
     }
