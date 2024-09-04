@@ -7,6 +7,7 @@ using UnityEngine;
 public class TypeScriptable : ScriptableObject
 {
     public string ename = "";
+    public int id;
     public string[] weaknesses;
     public string[] resistances;
     public string[] immunities;
