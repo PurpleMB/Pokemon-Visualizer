@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: FairySO
   m_EditorClassIdentifier: 
   ename: Fairy
+  id: 4
   weaknesses:
   - Poison
   - Steel

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: PoisonSO
   m_EditorClassIdentifier: 
   ename: Poison
+  id: 13
   weaknesses:
   - Ground
   - Psychic

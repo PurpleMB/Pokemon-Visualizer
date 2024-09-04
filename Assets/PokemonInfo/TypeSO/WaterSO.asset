@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: WaterSO
   m_EditorClassIdentifier: 
   ename: Water
+  id: 17
   weaknesses:
   - Grass
   - Electric

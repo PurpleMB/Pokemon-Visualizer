@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: RockSO
   m_EditorClassIdentifier: 
   ename: Rock
+  id: 15
   weaknesses:
   - Fighting
   - Ground

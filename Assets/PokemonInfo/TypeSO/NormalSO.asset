@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: NormalSO
   m_EditorClassIdentifier: 
   ename: Normal
+  id: 12
   weaknesses:
   - Fighting
   resistances: []

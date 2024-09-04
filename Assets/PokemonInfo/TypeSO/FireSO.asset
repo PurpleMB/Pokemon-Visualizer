@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: FireSO
   m_EditorClassIdentifier: 
   ename: Fire
+  id: 6
   weaknesses:
   - Ground
   - Rock

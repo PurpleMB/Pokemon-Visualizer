@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: DarkSO
   m_EditorClassIdentifier: 
   ename: Dark
+  id: 1
   weaknesses:
   - Fighting
   - Bug

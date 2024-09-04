@@ -21,7 +21,6 @@ public class TypeDisplay : MonoBehaviour
 
         _primType = _typeDic.LookupType(types[0]);
         _primTypeNode.SetDisplayedType(_primType);
-
         if(types.Length > 1) 
         {
             _secType = _typeDic.LookupType(types[1]);

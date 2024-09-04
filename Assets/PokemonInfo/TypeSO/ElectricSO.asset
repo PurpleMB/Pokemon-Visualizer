@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ElectricSO
   m_EditorClassIdentifier: 
   ename: Electric
+  id: 3
   weaknesses:
   - Ground
   resistances:

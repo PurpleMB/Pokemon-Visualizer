@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: DragonSO
   m_EditorClassIdentifier: 
   ename: Dragon
+  id: 2
   weaknesses:
   - Ice
   - Dragon

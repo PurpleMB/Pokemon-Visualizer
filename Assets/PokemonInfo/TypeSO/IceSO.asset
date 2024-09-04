@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: IceSO
   m_EditorClassIdentifier: 
   ename: Ice
+  id: 11
   weaknesses:
   - Fighting
   - Rock

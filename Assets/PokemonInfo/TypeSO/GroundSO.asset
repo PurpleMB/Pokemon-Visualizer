@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: GroundSO
   m_EditorClassIdentifier: 
   ename: Ground
+  id: 10
   weaknesses:
   - Water
   - Grass

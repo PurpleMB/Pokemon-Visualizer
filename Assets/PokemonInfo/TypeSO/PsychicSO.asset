@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: PsychicSO
   m_EditorClassIdentifier: 
   ename: Psychic
+  id: 14
   weaknesses:
   - Bug
   - Ghost

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: SteelSO
   m_EditorClassIdentifier: 
   ename: Steel
+  id: 16
   weaknesses:
   - Fighting
   - Ground

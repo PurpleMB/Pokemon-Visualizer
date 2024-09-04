@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: GhostSO
   m_EditorClassIdentifier: 
   ename: Ghost
+  id: 8
   weaknesses:
   - Ghost
   - Dark

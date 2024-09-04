@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: FightingSO
   m_EditorClassIdentifier: 
   ename: Fighting
+  id: 5
   weaknesses:
   - Flying
   - Psychic

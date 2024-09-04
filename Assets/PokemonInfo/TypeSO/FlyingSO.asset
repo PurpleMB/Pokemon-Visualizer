@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: FlyingSO
   m_EditorClassIdentifier: 
   ename: Flying
+  id: 7
   weaknesses:
   - Rock
   - Electric
