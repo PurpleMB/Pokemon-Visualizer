@@ -14,7 +14,7 @@ public class TypeNode : MonoBehaviour
     public void SetDisplayedType(TypeScriptable type)
     {
         _outerImg.color = type.primColor;
-        _innerImg.color = type.secColor;
+        //_innerImg.color = type.secColor;
         _typeText.text = type.ename;
     }
 }
