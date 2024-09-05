@@ -8,6 +8,8 @@ using UnityEngine.Windows;
 
 public class Visualizer : MonoBehaviour
 {
+    [SerializeField] private TypeDictionary _typeDic;
+
     [SerializeField] private Image _pokeImg;
     [SerializeField] private TextMeshProUGUI _pokeText;
 
@@ -15,10 +17,13 @@ public class Visualizer : MonoBehaviour
     [SerializeField] private TypeDisplay _typeDisplay;
     [SerializeField] private MatchupDisplay _matchupDisplay;
 
+    [SerializeField] private MoveDisplay _moveDisplay;
+
     private Pokemon _visualizedPoke;
 
     public void SetVisualizedPokemon(Pokemon pokemon)
-    {   
+    {
+        if (pokemon == null) { return; }
         _visualizedPoke = pokemon;
         // TODO: Move this chunk into a BasicDispay or something
         string imgPath = $"Images/{_visualizedPoke.id.ToString("000")}";
@@ -37,5 +42,13 @@ public class Visualizer : MonoBehaviour
 
 
         _matchupDisplay.DisplayMatchup(pokemon.type);
+    }
+
+    public void SetVisualizedMove(Move move, int slot)
+    {
+        if(move == null || slot < 0 || slot > 3) { return; }
+        Debug.Log("Visualizer: Attempting to visualize move: " + move.ename);
+        TypeScriptable moveType = _typeDic.LookupType(move.type);
+        _moveDisplay.DisplayMoveInSlot(move, moveType, slot);
     }
 }

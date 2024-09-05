@@ -7,28 +7,29 @@ public class MoveJsonInterpreter : MonoBehaviour
     [SerializeField] private TextAsset _movejson;
 
     [System.Serializable]
-    public class Move
-    {
-        public int accuracy;
-        public string category;
-        public string ename;
-        public int id;
-        public int power;
-        public int pp;
-        public string type;
-    }
-
-    [System.Serializable]
-    public class MoveList
+    public class MoveList : IEnumerable<Move>
     {
         public Move[] moves;
+
+        public IEnumerator<Move> GetEnumerator()
+        {
+            foreach (Move move in moves)
+            {
+                yield return move;
+            }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
     }
 
-    public MoveList moveList = new MoveList();
+    public MoveList MovesList = new MoveList();
 
     // Start is called before the first frame update
     void Awake()
     {
-        moveList = JsonUtility.FromJson<MoveList>(_movejson.text);
+        MovesList = JsonUtility.FromJson<MoveList>(_movejson.text);
     }
 }
