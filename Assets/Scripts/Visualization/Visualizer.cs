@@ -55,8 +55,8 @@ public class Visualizer : MonoBehaviour
 
         _basicDisplay.SetBasicDisplay(pokemon);
         _statsDisplay.SetStatDisplay(pokemon.basestats);
-        _typeDisplay.SetDisplayedTyping(pokemon.type);
-        _matchupDisplay.DisplayMatchup(pokemon.type);
+        _typeDisplay.SetDisplayedTyping(primType, secType);
+        _matchupDisplay.DisplayMatchup(primType, secType);
         _backgroundDisplay.SetBackgroundByType(primType, secType);
     }
 

@@ -16,24 +16,15 @@ public class MatchupDisplay : MonoBehaviour
     [SerializeField] private GridLayoutGroup _resistanceGroup;
     [SerializeField] private GridLayoutGroup _immunityGroup;
 
-    private TypeSO _primType, _secType;
-    private int[] _matchups = new int[19];
+    private int[] _matchups;
 
-    public void DisplayMatchup(string[] types)
+    public void DisplayMatchup(TypeSO primType, TypeSO secType = null)
     {
-        if (types.Length == 0)
-        {
-            Debug.LogWarning("MatchupDisplay: Invalid typing data recieved");
-            return;
-        }
-
         clearMathchups();
-        _primType = _typeDic.LookupType(types[0]);
-        calculateMatchups(_primType);
-        if (types.Length > 1)
+        calculateMatchups(primType);
+        if (secType != null)
         {
-            _secType = _typeDic.LookupType(types[1]);
-            calculateMatchups(_secType);
+            calculateMatchups(secType);
         }
         displayWeaknesses();
         displayResistances();
@@ -42,7 +33,8 @@ public class MatchupDisplay : MonoBehaviour
 
     private void clearMathchups()
     {
-        for(int i = 0; i < _matchups.Length; i++) 
+        _matchups = new int[19];
+        for (int i = 0; i < _matchups.Length; i++) 
         {
             _matchups[i] = _BASEVALUE;
         }
