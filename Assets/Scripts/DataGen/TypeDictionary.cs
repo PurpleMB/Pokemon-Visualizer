@@ -6,13 +6,28 @@ using UnityEngine;
 public class TypeDictionary : MonoBehaviour
 {
     [SerializeField] private TypeSO[] _types;
-    private Dictionary<string, TypeSO> _typesDic;
+    private Dictionary<string, TypeSO> _typesDic = new Dictionary<string, TypeSO>();
 
     private void Awake()
     {
         foreach (var type in _types)
         {
             _typesDic.Add(type.ename, type);
+        }
+    }
+
+    public void LookupPokemomTypes(Pokemon poke,ref TypeSO primType,ref TypeSO secType)
+    {
+        if (poke == null)
+        {
+            return;
+        }
+
+        string[] types = poke.type;
+        primType = _typesDic[types[0]];
+        if(types.Length > 1)
+        {
+            secType = _typesDic[types[1]];
         }
     }
 

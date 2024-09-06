@@ -11,6 +11,26 @@ public class BackgroundDisplay : MonoBehaviour
 
     public void SetBackgroundByType(TypeSO primType, TypeSO secType = null)
     {
+        foreach(Image img in _primColImgs)
+        {
+            img.color = primType.primColor;
+        }
 
+        foreach(Image img in _secColImgs)
+        {
+            if(secType != null)
+            {
+                img.color = secType.secColor;
+            }
+            else
+            {
+                img.color = primType.secColor;
+            }
+        }
+
+        foreach(Image img in _terColImgs)
+        {
+            img.color = primType.terColor;
+        }
     }
 }

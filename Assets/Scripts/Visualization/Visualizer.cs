@@ -31,6 +31,7 @@ public class Visualizer : MonoBehaviour
             setVisualizedPokemon(identifiedPoke);
             return true;
         }
+        setVisualizedPokemon(_pokemonDb.LookupByName("???"));
         return false;   
     }
 
@@ -49,12 +50,14 @@ public class Visualizer : MonoBehaviour
     {
         if (pokemon == null) { return; }
         _visualizedPoke = pokemon;
+        TypeSO primType = null, secType = null;
+        _typeDic.LookupPokemomTypes(_visualizedPoke,ref primType,ref secType);
 
         _basicDisplay.SetBasicDisplay(pokemon);
         _statsDisplay.SetStatDisplay(pokemon.basestats);
         _typeDisplay.SetDisplayedTyping(pokemon.type);
         _matchupDisplay.DisplayMatchup(pokemon.type);
-
+        _backgroundDisplay.SetBackgroundByType(primType, secType);
     }
 
     public bool VisualizeMove(string moveName, int slot) 
@@ -66,6 +69,7 @@ public class Visualizer : MonoBehaviour
             setVisualizedMove(identifiedMove, slot);
             return true;
         }
+        setVisualizedMove(_moveDb.LookupByName("???"), slot);
         return false;
     }
 

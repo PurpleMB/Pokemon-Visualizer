@@ -16,12 +16,19 @@ public abstract class Database<T> : MonoBehaviour where T : class
 
     public T LookupByName(string name)
     {
-        return _nameDict[name];
+        if (_nameDict.ContainsKey(name))
+        {
+            return _nameDict[name];
+        }
+        return null;
     }
 
     public T LookupById(int id)
     {
-        id = Mathf.Clamp(id, 0, _idDict.Count);
-        return _idDict[id];
+        if(id >= 0 && id < _idDict.Count)
+        {
+            return _idDict[id];
+        }
+        return null;
     }
 }

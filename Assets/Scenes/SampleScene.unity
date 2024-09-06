@@ -939,6 +939,26 @@ PrefabInstance:
       propertyPath: m_text
       value: Immunities
       objectReference: {fileID: 0}
+    - target: {fileID: 75282678539357097, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 75282678539357097, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 75282678539357097, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 75282678539357097, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 75282678539357097, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2659152131777994806, guid: be665fc688d42a244893cbedac464600, type: 3}
       propertyPath: m_Name
       value: ImmunityNodeGroup
@@ -970,6 +990,18 @@ PrefabInstance:
     - target: {fileID: 3468376714690316534, guid: be665fc688d42a244893cbedac464600, type: 3}
       propertyPath: m_Name
       value: ImmunityGroup
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908603777293614706, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908603777293614706, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_Color.g
+      value: 0.68735206
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908603777293614706, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_Color.r
+      value: 0.57254905
       objectReference: {fileID: 0}
     - target: {fileID: 7096280136862633009, guid: be665fc688d42a244893cbedac464600, type: 3}
       propertyPath: m_Pivot.x
@@ -2118,6 +2150,60 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _visualizer: {fileID: 1161490720}
+--- !u!1 &831139680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 831139681}
+  - component: {fileID: 831139682}
+  m_Layer: 0
+  m_Name: BackgroundDisplay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &831139681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831139680}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1181712374}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &831139682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831139680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76516b937347ad84ba13b062be405aa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _primColImgs:
+  - {fileID: 1826694864}
+  _secColImgs:
+  - {fileID: 828993856}
+  _terColImgs:
+  - {fileID: 1684597774}
+  - {fileID: 1865831722}
+  - {fileID: 1364258451}
+  - {fileID: 1794481123}
+  - {fileID: 365210511}
 --- !u!1001 &831894071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2802,6 +2888,7 @@ MonoBehaviour:
   _statsDisplay: {fileID: 932530569}
   _typeDisplay: {fileID: 718735905}
   _matchupDisplay: {fileID: 1500886379}
+  _backgroundDisplay: {fileID: 831139682}
   _moveDisplay: {fileID: 238022368}
 --- !u!1 &1176928818
 GameObject:
@@ -2942,6 +3029,7 @@ Transform:
   - {fileID: 718735906}
   - {fileID: 1500886380}
   - {fileID: 238022367}
+  - {fileID: 831139681}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1201630216
@@ -4263,6 +4351,26 @@ PrefabInstance:
       propertyPath: m_text
       value: Resistances
       objectReference: {fileID: 0}
+    - target: {fileID: 75282678539357097, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 75282678539357097, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 75282678539357097, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 75282678539357097, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 75282678539357097, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2659152131777994806, guid: be665fc688d42a244893cbedac464600, type: 3}
       propertyPath: m_Name
       value: ResistanceNodeGroup
@@ -4294,6 +4402,18 @@ PrefabInstance:
     - target: {fileID: 3468376714690316534, guid: be665fc688d42a244893cbedac464600, type: 3}
       propertyPath: m_Name
       value: ResistanceGroup
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908603777293614706, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_Color.b
+      value: 0.49733
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908603777293614706, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8301887
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908603777293614706, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5316924
       objectReference: {fileID: 0}
     - target: {fileID: 7096280136862633009, guid: be665fc688d42a244893cbedac464600, type: 3}
       propertyPath: m_Pivot.x
@@ -4385,11 +4505,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7454891390201766090, guid: be665fc688d42a244893cbedac464600, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 7454891390201766090, guid: be665fc688d42a244893cbedac464600, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454891390201766090, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454891390201766090, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454891390201766090, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7454891390201766090, guid: be665fc688d42a244893cbedac464600, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -5934,6 +6066,26 @@ PrefabInstance:
       propertyPath: m_text
       value: Weaknesses
       objectReference: {fileID: 0}
+    - target: {fileID: 75282678539357097, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 75282678539357097, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 75282678539357097, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 75282678539357097, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 75282678539357097, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 379635927248189172, guid: be665fc688d42a244893cbedac464600, type: 3}
       propertyPath: m_FlexibleHeight
       value: 1
@@ -5969,6 +6121,18 @@ PrefabInstance:
     - target: {fileID: 3468376714690316534, guid: be665fc688d42a244893cbedac464600, type: 3}
       propertyPath: m_Name
       value: Weaknesses
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908603777293614706, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_Color.b
+      value: 0.4285333
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908603777293614706, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_Color.g
+      value: 0.4285333
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908603777293614706, guid: be665fc688d42a244893cbedac464600, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8490566
       objectReference: {fileID: 0}
     - target: {fileID: 7096280136862633009, guid: be665fc688d42a244893cbedac464600, type: 3}
       propertyPath: m_Pivot.x
@@ -6060,7 +6224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7454891390201766090, guid: be665fc688d42a244893cbedac464600, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 200
+      value: 234.08
       objectReference: {fileID: 0}
     - target: {fileID: 7454891390201766090, guid: be665fc688d42a244893cbedac464600, type: 3}
       propertyPath: m_SizeDelta.y

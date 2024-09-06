@@ -17,7 +17,7 @@ public class MatchupDisplay : MonoBehaviour
     [SerializeField] private GridLayoutGroup _immunityGroup;
 
     private TypeSO _primType, _secType;
-    private int[] _matchups = new int[18];
+    private int[] _matchups = new int[19];
 
     public void DisplayMatchup(string[] types)
     {
