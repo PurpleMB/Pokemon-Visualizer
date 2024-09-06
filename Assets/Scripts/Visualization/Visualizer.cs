@@ -21,6 +21,10 @@ public class Visualizer : MonoBehaviour
     private void Start()
     {
         VisualizePokemon("???");
+        for (int i = 0; i < 4; i++)
+        {
+            VisualizeMove("---", i);
+        }
     }
 
     public bool VisualizePokemon(string pokemonName)
