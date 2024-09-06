@@ -4,22 +4,16 @@ using UnityEngine;
 
 public class PokeInputField : MonoBehaviour
 {
-    [SerializeField] private PokemonDictionary _pDic;
     [SerializeField] private Visualizer _visualizer;
 
-    public void OnPokemonEntered(string ename)
+    public void OnPokemonEntered(string name)
     {
+        Debug.Log(name.ToLower());
         if (_visualizer != null)
         {
-            Pokemon identifiedPoke = _pDic.GetPokemon(ename);
-
-            if (identifiedPoke != null)
+            if(!_visualizer.VisualizePokemon(name.ToLower()))
             {
-                Debug.Log("Input Field successfuly found " + identifiedPoke.name.english);
-                if (_visualizer != null)
-                {
-                    _visualizer.SetVisualizedPokemon(identifiedPoke);
-                }
+                //TODO: Behavior for when pokemon input is invalid
             }
         }
     }

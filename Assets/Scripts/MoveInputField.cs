@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MoveInputField : MonoBehaviour
 {
-    [SerializeField] private MoveDictionary _mDic;
     [SerializeField] private Visualizer _visualizer;
     [SerializeField] private int _moveSlot = -1;
 
@@ -12,15 +11,9 @@ public class MoveInputField : MonoBehaviour
     {
         if (_visualizer != null)
         {
-            Move identifiedMove = _mDic.GetMove(ename);
-
-            if (identifiedMove != null)
+            if (!_visualizer.VisualizeMove(ename.ToLower(), _moveSlot))
             {
-                Debug.Log("MoveInputField: Input move successfuly found " + identifiedMove.ename);
-                if (_visualizer != null)
-                {
-                    _visualizer.SetVisualizedMove(identifiedMove, _moveSlot);
-                }
+                //TODO: Behavior for when move input is invalid
             }
         }
     }

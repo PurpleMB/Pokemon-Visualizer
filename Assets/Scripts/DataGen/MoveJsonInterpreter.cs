@@ -27,7 +27,6 @@ public class MoveJsonInterpreter : MonoBehaviour
 
     public MoveList MovesList = new MoveList();
 
-    // Start is called before the first frame update
     void Awake()
     {
         MovesList = JsonUtility.FromJson<MoveList>(_movejson.text);

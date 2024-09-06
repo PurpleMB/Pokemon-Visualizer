@@ -28,10 +28,9 @@ public class PokeJsonInterpreter : MonoBehaviour
 
     public PokemonList PokeList = new PokemonList();
 
-    // Start is called before the first frame update
     void Awake()
     {
         PokeList = JsonUtility.FromJson<PokemonList>(_pokejson.text);
-        Debug.Log("# of Pokemon interpreted from Json at Awake: " + PokeList.Count());
+        Debug.Log("Pokemon List made");
     }
 }
