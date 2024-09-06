@@ -12,10 +12,16 @@ public class Visualizer : MonoBehaviour
     [SerializeField] private StatsDisplay _statsDisplay;
     [SerializeField] private TypeDisplay _typeDisplay;
     [SerializeField] private MatchupDisplay _matchupDisplay;
+    [SerializeField] private BackgroundDisplay _backgroundDisplay;
 
     [SerializeField] private MoveDisplay _moveDisplay;
 
     private Pokemon _visualizedPoke;
+
+    private void Start()
+    {
+        VisualizePokemon("???");
+    }
 
     public bool VisualizePokemon(string pokemonName)
     {
@@ -48,6 +54,7 @@ public class Visualizer : MonoBehaviour
         _statsDisplay.SetStatDisplay(pokemon.basestats);
         _typeDisplay.SetDisplayedTyping(pokemon.type);
         _matchupDisplay.DisplayMatchup(pokemon.type);
+
     }
 
     public bool VisualizeMove(string moveName, int slot) 
@@ -66,7 +73,7 @@ public class Visualizer : MonoBehaviour
     {
         if(move == null || slot < 0 || slot > 3) { return; }
         Debug.Log("Visualizer: Attempting to visualize move: " + move.ename);
-        TypeScriptable moveType = _typeDic.LookupType(move.type);
+        TypeSO moveType = _typeDic.LookupType(move.type);
         _moveDisplay.DisplayMoveInSlot(move, moveType, slot);
     }
 }

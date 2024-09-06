@@ -9,8 +9,8 @@ public class TypeDisplay : MonoBehaviour
     [SerializeField] private TypeNode _primTypeNode;
     [SerializeField] private TypeNode _secTypeNode;
 
-    private TypeScriptable _primType;
-    private TypeScriptable _secType;
+    private TypeSO _primType;
+    private TypeSO _secType;
 
     public void SetDisplayedTyping(string[] types)
     {

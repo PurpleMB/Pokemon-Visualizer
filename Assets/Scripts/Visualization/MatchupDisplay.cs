@@ -16,7 +16,7 @@ public class MatchupDisplay : MonoBehaviour
     [SerializeField] private GridLayoutGroup _resistanceGroup;
     [SerializeField] private GridLayoutGroup _immunityGroup;
 
-    private TypeScriptable _primType, _secType;
+    private TypeSO _primType, _secType;
     private int[] _matchups = new int[18];
 
     public void DisplayMatchup(string[] types)
@@ -60,7 +60,7 @@ public class MatchupDisplay : MonoBehaviour
         }
     }
 
-    private void calculateMatchups(TypeScriptable type)
+    private void calculateMatchups(TypeSO type)
     {
         if (type == null) {
             Debug.LogWarning("MatchupDisplay: Attempting to calculate matchup to null type");
@@ -69,7 +69,7 @@ public class MatchupDisplay : MonoBehaviour
 
         foreach(string weakness in type.weaknesses)
         {
-            TypeScriptable weakType = _typeDic.LookupType(weakness);
+            TypeSO weakType = _typeDic.LookupType(weakness);
             if (weakType != null) 
             {
                 _matchups[weakType.id] *= 2;
@@ -78,7 +78,7 @@ public class MatchupDisplay : MonoBehaviour
 
         foreach (string resist in type.resistances)
         {
-            TypeScriptable resistType = _typeDic.LookupType(resist);
+            TypeSO resistType = _typeDic.LookupType(resist);
             if (resistType != null)
             {
                 _matchups[resistType.id] /= 2;
@@ -87,7 +87,7 @@ public class MatchupDisplay : MonoBehaviour
 
         foreach (string immunity in type.immunities)
         {
-            TypeScriptable immuneType = _typeDic.LookupType(immunity);
+            TypeSO immuneType = _typeDic.LookupType(immunity);
             if (immuneType != null)
             {
                 _matchups[immuneType.id] *= 0;

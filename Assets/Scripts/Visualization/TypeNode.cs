@@ -11,7 +11,7 @@ public class TypeNode : MonoBehaviour
     [SerializeField] private Image _innerImg;
     [SerializeField] private TextMeshProUGUI _typeText;
 
-    public void SetDisplayedType(TypeScriptable type)
+    public void SetDisplayedType(TypeSO type)
     {
         _outerImg.color = type.primColor;
         //_innerImg.color = type.secColor;

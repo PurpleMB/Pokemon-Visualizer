@@ -6,7 +6,7 @@ public class MoveDisplay : MonoBehaviour
 {
     [SerializeField] private MoveNode[] _moveSlots;
 
-    public void DisplayMoveInSlot(Move move, TypeScriptable type ,int slot)
+    public void DisplayMoveInSlot(Move move, TypeSO type ,int slot)
     {
         if (move == null || (slot < 0 || slot > _moveSlots.Length - 1))
         {

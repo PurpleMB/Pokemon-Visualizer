@@ -11,7 +11,7 @@ public class MoveNode : MonoBehaviour
     [SerializeField] private Image _innerImg;
     [SerializeField] private TextMeshProUGUI _moveName;
 
-    public void SetDisplayedMove(Move move, TypeScriptable type)
+    public void SetDisplayedMove(Move move, TypeSO type)
     {
         _outerImg.color = type.primColor;
         _innerImg.color = type.secColor;

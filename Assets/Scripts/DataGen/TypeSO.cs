@@ -4,7 +4,7 @@ using UnityEngine;
 
 [System.Serializable]
 [CreateAssetMenu(fileName="typeSO", menuName ="ScriptableObject/TypeSO")]
-public class TypeScriptable : ScriptableObject
+public class TypeSO : ScriptableObject
 {
     public string ename = "";
     public int id;
