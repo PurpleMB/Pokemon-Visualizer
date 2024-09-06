@@ -10,17 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f54ec5490144c14d8ef9934995ee4b9, type: 3}
-  m_Name: IceSO
+  m_Name: 18_WaterSO
   m_EditorClassIdentifier: 
-  ename: Ice
-  id: 11
+  ename: Water
+  id: 18
   weaknesses:
-  - Fighting
-  - Rock
+  - Grass
+  - Electric
+  resistances:
   - Steel
   - Fire
-  resistances:
+  - Water
   - Ice
   immunities: []
-  primColor: {r: 0.3532396, g: 0.9156019, b: 0.9245283, a: 1}
-  secColor: {r: 0.6452474, g: 0.8732653, b: 0.9433962, a: 1}
+  primColor: {r: 0.16078432, g: 0.5019608, b: 0.93725497, a: 1}
+  secColor: {r: 0.10588236, g: 0.3254902, b: 0.60784316, a: 1}
+  terColor: {r: 0.454902, g: 0.6745098, b: 0.9607844, a: 1}

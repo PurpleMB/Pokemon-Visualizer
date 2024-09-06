@@ -10,18 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f54ec5490144c14d8ef9934995ee4b9, type: 3}
-  m_Name: WaterSO
+  m_Name: 11_GroundSO
   m_EditorClassIdentifier: 
-  ename: Water
-  id: 17
+  ename: Ground
+  id: 11
   weaknesses:
-  - Grass
-  - Electric
-  resistances:
-  - Steel
-  - Fire
   - Water
+  - Grass
   - Ice
-  immunities: []
-  primColor: {r: 0.10234957, g: 0.34281868, b: 0.8679245, a: 1}
-  secColor: {r: 0.5529412, g: 0.9040687, b: 1, a: 1}
+  resistances:
+  - Poison
+  - Rock
+  immunities:
+  - Electric
+  primColor: {r: 0.5686275, g: 0.31764707, b: 0.12941177, a: 1}
+  secColor: {r: 0.36862746, g: 0.20784315, b: 0.08235294, a: 1}
+  terColor: {r: 0.72156864, g: 0.5568628, b: 0.43529415, a: 1}

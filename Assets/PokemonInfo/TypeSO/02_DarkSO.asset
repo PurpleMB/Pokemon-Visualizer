@@ -10,21 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f54ec5490144c14d8ef9934995ee4b9, type: 3}
-  m_Name: RockSO
+  m_Name: 02_DarkSO
   m_EditorClassIdentifier: 
-  ename: Rock
-  id: 15
+  ename: Dark
+  id: 2
   weaknesses:
   - Fighting
-  - Ground
-  - Steel
-  - Water
-  - Grass
+  - Bug
+  - Fairy
   resistances:
-  - Normal
-  - Flying
-  - Poison
-  - Fire
-  immunities: []
-  primColor: {r: 0.7607844, g: 0.61960787, b: 0.24313727, a: 1}
-  secColor: {r: 0.9339623, g: 0.8536063, b: 0.6828498, a: 1}
+  - Ghost
+  - Dark
+  immunities:
+  - Psychic
+  primColor: {r: 0.38431376, g: 0.3019608, b: 0.30588236, a: 1}
+  secColor: {r: 0.2509804, g: 0.19607845, b: 0.20000002, a: 1}
+  terColor: {r: 0.6, g: 0.54509807, b: 0.54901963, a: 1}

@@ -10,21 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f54ec5490144c14d8ef9934995ee4b9, type: 3}
-  m_Name: FireSO
+  m_Name: 00_MysterySO
   m_EditorClassIdentifier: 
-  ename: Fire
-  id: 6
-  weaknesses:
-  - Ground
-  - Rock
-  - Water
-  resistances:
-  - Bug
-  - Steel
-  - Fire
-  - Grass
-  - Ice
-  - Fairy
+  ename: ???
+  id: 0
+  weaknesses: []
+  resistances: []
   immunities: []
-  primColor: {r: 1, g: 0.331669, b: 0.051886797, a: 1}
-  secColor: {r: 1, g: 0.6463027, b: 0.06132078, a: 1}
+  primColor: {r: 0.40784317, g: 0.627451, b: 0.5647059, a: 1}
+  secColor: {r: 0.6117647, g: 0.8705883, b: 0.8705883, a: 1}
+  terColor: {r: 1, g: 0.3529412, b: 0.54901963, a: 1}

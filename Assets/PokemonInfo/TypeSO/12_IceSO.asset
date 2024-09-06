@@ -10,19 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f54ec5490144c14d8ef9934995ee4b9, type: 3}
-  m_Name: DragonSO
+  m_Name: 12_IceSO
   m_EditorClassIdentifier: 
-  ename: Dragon
-  id: 2
+  ename: Ice
+  id: 12
   weaknesses:
-  - Ice
-  - Dragon
-  - Fairy
-  resistances:
+  - Fighting
+  - Rock
+  - Steel
   - Fire
-  - Water
-  - Grass
-  - Electric
+  resistances:
+  - Ice
   immunities: []
-  primColor: {r: 0.37254903, g: 0.4901961, b: 1, a: 1}
-  secColor: {r: 1, g: 0.40315747, b: 0.2688679, a: 1}
+  primColor: {r: 0.2392157, g: 0.8078432, b: 0.95294124, a: 1}
+  secColor: {r: 0.15686275, g: 0.5254902, b: 0.61960787, a: 1}
+  terColor: {r: 0.5058824, g: 0.8745099, b: 0.9686275, a: 1}

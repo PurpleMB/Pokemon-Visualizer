@@ -1,6 +1,15 @@
 {
     "moves": [
         {
+            "accuracy": 0,
+            "category": "Physical",
+            "ename": "???",
+            "id": 0,
+            "power": 0,
+            "pp": 0,
+            "type": "???"
+        },
+        {
             "accuracy": 100,
             "category": "Physical",
             "ename": "Pound",

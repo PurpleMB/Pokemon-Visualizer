@@ -10,14 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f54ec5490144c14d8ef9934995ee4b9, type: 3}
-  m_Name: NormalSO
+  m_Name: 10_GrassSO
   m_EditorClassIdentifier: 
-  ename: Normal
-  id: 12
+  ename: Grass
+  id: 10
   weaknesses:
-  - Fighting
-  resistances: []
-  immunities:
-  - Ghost
-  primColor: {r: 0.7075472, g: 0.7075472, b: 0.7075472, a: 1}
-  secColor: {r: 0.9150943, g: 0.91023827, b: 0.8503471, a: 1}
+  - Flying
+  - Poison
+  - Bug
+  - Fire
+  - Ice
+  resistances:
+  - Ground
+  - Water
+  - Grass
+  - Electric
+  immunities: []
+  primColor: {r: 0.24705884, g: 0.6313726, b: 0.16078432, a: 1}
+  secColor: {r: 0.16078432, g: 0.41176474, b: 0.10588236, a: 1}
+  terColor: {r: 0.50980395, g: 0.7607844, b: 0.454902, a: 1}

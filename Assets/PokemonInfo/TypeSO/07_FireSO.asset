@@ -10,18 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f54ec5490144c14d8ef9934995ee4b9, type: 3}
-  m_Name: DarkSO
+  m_Name: 07_FireSO
   m_EditorClassIdentifier: 
-  ename: Dark
-  id: 1
+  ename: Fire
+  id: 7
   weaknesses:
-  - Fighting
-  - Bug
-  - Fairy
+  - Ground
+  - Rock
+  - Water
   resistances:
-  - Ghost
-  - Dark
-  immunities:
-  - Psychic
-  primColor: {r: 0.43137258, g: 0.34117648, b: 0.2784314, a: 1}
-  secColor: {r: 0.7150991, g: 0.615566, b: 0.8207547, a: 1}
+  - Bug
+  - Steel
+  - Fire
+  - Grass
+  - Ice
+  - Fairy
+  immunities: []
+  primColor: {r: 0.90196085, g: 0.15686275, b: 0.16078432, a: 1}
+  secColor: {r: 0.5882353, g: 0.10196079, b: 0.10588236, a: 1}
+  terColor: {r: 0.93725497, g: 0.45098042, b: 0.454902, a: 1}

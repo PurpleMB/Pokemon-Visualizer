@@ -10,18 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f54ec5490144c14d8ef9934995ee4b9, type: 3}
-  m_Name: GhostSO
+  m_Name: 08_FlyingSO
   m_EditorClassIdentifier: 
-  ename: Ghost
+  ename: Flying
   id: 8
   weaknesses:
-  - Ghost
-  - Dark
+  - Rock
+  - Electric
+  - Ice
   resistances:
-  - Poison
-  - Bug
-  immunities:
-  - Normal
   - Fighting
-  primColor: {r: 0.7490196, g: 0.2627451, b: 0.7254902, a: 1}
-  secColor: {r: 0.6571734, g: 0.512994, b: 0.8301887, a: 1}
+  - Bug
+  - Grass
+  immunities:
+  - Ground
+  primColor: {r: 0.5058824, g: 0.7254902, b: 0.93725497, a: 1}
+  secColor: {r: 0.32941177, g: 0.47058827, b: 0.60784316, a: 1}
+  terColor: {r: 0.6784314, g: 0.8235295, b: 0.9607844, a: 1}

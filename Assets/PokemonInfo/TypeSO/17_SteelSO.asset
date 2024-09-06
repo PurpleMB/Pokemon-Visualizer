@@ -10,17 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f54ec5490144c14d8ef9934995ee4b9, type: 3}
-  m_Name: BugSO
+  m_Name: 17_SteelSO
   m_EditorClassIdentifier: 
-  ename: Bug
+  ename: Steel
+  id: 17
   weaknesses:
-  - Flying
-  - Rock
-  - Fire
-  resistances:
   - Fighting
   - Ground
+  - Fire
+  resistances:
+  - Normal
+  - Flying
+  - Rock
+  - Bug
+  - Steel
   - Grass
-  immunities: []
-  primColor: {r: 0.6313726, g: 0.7725491, b: 0.5372549, a: 1}
-  secColor: {r: 0.9716981, g: 0.9221081, b: 0.5454343, a: 1}
+  - Psychic
+  - Ice
+  - Dragon
+  - Fairy
+  immunities:
+  - Poison
+  primColor: {r: 0.37647063, g: 0.6313726, b: 0.72156864, a: 1}
+  secColor: {r: 0.24313727, g: 0.41176474, b: 0.47058827, a: 1}
+  terColor: {r: 0.59607846, g: 0.7607844, b: 0.8196079, a: 1}

@@ -10,18 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f54ec5490144c14d8ef9934995ee4b9, type: 3}
-  m_Name: FightingSO
+  m_Name: 09_GhostSO
   m_EditorClassIdentifier: 
-  ename: Fighting
-  id: 5
+  ename: Ghost
+  id: 9
   weaknesses:
-  - Flying
-  - Psychic
-  - Fairy
-  resistances:
-  - Rock
-  - Bug
+  - Ghost
   - Dark
-  immunities: []
-  primColor: {r: 0.8117648, g: 0.1764706, b: 0.23529413, a: 1}
-  secColor: {r: 1, g: 0.65543705, b: 0.2688679, a: 1}
+  resistances:
+  - Poison
+  - Bug
+  immunities:
+  - Normal
+  - Fighting
+  primColor: {r: 0.43921572, g: 0.25490198, b: 0.43921572, a: 1}
+  secColor: {r: 0.28627452, g: 0.16470589, b: 0.28627452, a: 1}
+  terColor: {r: 0.63529414, g: 0.5176471, b: 0.63529414, a: 1}

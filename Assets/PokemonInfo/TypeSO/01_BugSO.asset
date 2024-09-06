@@ -10,18 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f54ec5490144c14d8ef9934995ee4b9, type: 3}
-  m_Name: GroundSO
+  m_Name: 01_BugSO
   m_EditorClassIdentifier: 
-  ename: Ground
-  id: 10
+  ename: Bug
+  id: 1
   weaknesses:
-  - Water
-  - Grass
-  - Ice
-  resistances:
-  - Poison
+  - Flying
   - Rock
-  immunities:
-  - Electric
-  primColor: {r: 1, g: 0.783382, b: 0.16470587, a: 1}
-  secColor: {r: 0.754717, g: 0.66001487, b: 0.3809185, a: 1}
+  - Fire
+  resistances:
+  - Fighting
+  - Ground
+  - Grass
+  immunities: []
+  primColor: {r: 0.5686275, g: 0.6313726, b: 0.098039225, a: 1}
+  secColor: {r: 0.36862746, g: 0.41176474, b: 0.0627451, a: 1}
+  terColor: {r: 0.72156864, g: 0.7607844, b: 0.4156863, a: 1}

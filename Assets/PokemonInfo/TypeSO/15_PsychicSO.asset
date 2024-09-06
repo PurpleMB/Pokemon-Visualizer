@@ -10,19 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f54ec5490144c14d8ef9934995ee4b9, type: 3}
-  m_Name: FlyingSO
+  m_Name: 15_PsychicSO
   m_EditorClassIdentifier: 
-  ename: Flying
-  id: 7
+  ename: Psychic
+  id: 15
   weaknesses:
-  - Rock
-  - Electric
-  - Ice
+  - Bug
+  - Ghost
+  - Dark
   resistances:
   - Fighting
-  - Bug
-  - Grass
-  immunities:
-  - Ground
-  primColor: {r: 0.61960787, g: 0.86274517, b: 0.8352942, a: 1}
-  secColor: {r: 0.7740814, g: 0.6933962, b: 1, a: 1}
+  - Psychic
+  immunities: []
+  primColor: {r: 0.93725497, g: 0.25490198, b: 0.47450984, a: 1}
+  secColor: {r: 0.60784316, g: 0.16470589, b: 0.30980393, a: 1}
+  terColor: {r: 0.9607844, g: 0.5176471, b: 0.65882355, a: 1}

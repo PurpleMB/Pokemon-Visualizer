@@ -10,16 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f54ec5490144c14d8ef9934995ee4b9, type: 3}
-  m_Name: ElectricSO
+  m_Name: 16_RockSO
   m_EditorClassIdentifier: 
-  ename: Electric
-  id: 3
+  ename: Rock
+  id: 16
   weaknesses:
+  - Fighting
   - Ground
-  resistances:
-  - Flying
-  - Electric
   - Steel
+  - Water
+  - Grass
+  resistances:
+  - Normal
+  - Flying
+  - Poison
+  - Fire
   immunities: []
-  primColor: {r: 0.93725497, g: 0.7607844, b: 0.09019608, a: 1}
-  secColor: {r: 1, g: 0.97346705, b: 0.43867922, a: 1}
+  primColor: {r: 0.6862745, g: 0.6627451, b: 0.5058824, a: 1}
+  secColor: {r: 0.44705886, g: 0.43137258, b: 0.32941177, a: 1}
+  terColor: {r: 0.7960785, g: 0.7803922, b: 0.6784314, a: 1}

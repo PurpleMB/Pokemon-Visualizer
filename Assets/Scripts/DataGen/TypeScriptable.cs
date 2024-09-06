@@ -13,4 +13,5 @@ public class TypeScriptable : ScriptableObject
     public string[] immunities;
     public Color primColor;
     public Color secColor;
+    public Color terColor;
 }

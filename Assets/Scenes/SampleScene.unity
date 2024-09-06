@@ -687,6 +687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _types:
+  - {fileID: 11400000, guid: d1bf9154afc260447b379e5ebdf85706, type: 2}
   - {fileID: 11400000, guid: 0a1bab688c4adb54cb5cdfb1deee295b, type: 2}
   - {fileID: 11400000, guid: 2ef0fe06ce38e8942bdb7ab59763422b, type: 2}
   - {fileID: 11400000, guid: d4e4ce409f167ea4797aef92d5cb7358, type: 2}

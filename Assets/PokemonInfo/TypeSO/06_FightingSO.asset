@@ -10,21 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f54ec5490144c14d8ef9934995ee4b9, type: 3}
-  m_Name: GrassSO
+  m_Name: 06_FightingSO
   m_EditorClassIdentifier: 
-  ename: Grass
-  id: 9
+  ename: Fighting
+  id: 6
   weaknesses:
   - Flying
-  - Poison
-  - Bug
-  - Fire
-  - Ice
+  - Psychic
+  - Fairy
   resistances:
-  - Ground
-  - Water
-  - Grass
-  - Electric
+  - Rock
+  - Bug
+  - Dark
   immunities: []
-  primColor: {r: 0.44172612, g: 0.8962264, b: 0.2325116, a: 1}
-  secColor: {r: 0.6839622, g: 1, b: 0.78095216, a: 1}
+  primColor: {r: 1, g: 0.5019608, b: 0, a: 1}
+  secColor: {r: 0.6509804, g: 0.3254902, b: 0, a: 1}
+  terColor: {r: 1, g: 0.6745098, b: 0.34901962, a: 1}

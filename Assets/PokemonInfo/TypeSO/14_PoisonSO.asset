@@ -10,26 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f54ec5490144c14d8ef9934995ee4b9, type: 3}
-  m_Name: SteelSO
+  m_Name: 14_PoisonSO
   m_EditorClassIdentifier: 
-  ename: Steel
-  id: 16
+  ename: Poison
+  id: 14
   weaknesses:
-  - Fighting
   - Ground
-  - Fire
-  resistances:
-  - Normal
-  - Flying
-  - Rock
-  - Bug
-  - Steel
-  - Grass
   - Psychic
-  - Ice
-  - Dragon
-  - Fairy
-  immunities:
+  resistances:
+  - Fighting
   - Poison
-  primColor: {r: 0.60898006, g: 0.60898006, b: 0.8018868, a: 1}
-  secColor: {r: 0.8415806, g: 0.8415806, b: 0.9056604, a: 1}
+  - Bug
+  - Grass
+  - Fairy
+  immunities: []
+  primColor: {r: 0.5686275, g: 0.25490198, b: 0.7960785, a: 1}
+  secColor: {r: 0.36862746, g: 0.16470589, b: 0.5176471, a: 1}
+  terColor: {r: 0.72156864, g: 0.5176471, b: 0.86666673, a: 1}

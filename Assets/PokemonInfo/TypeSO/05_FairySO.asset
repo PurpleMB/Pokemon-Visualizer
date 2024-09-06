@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f54ec5490144c14d8ef9934995ee4b9, type: 3}
-  m_Name: PoisonSO
+  m_Name: 05_FairySO
   m_EditorClassIdentifier: 
-  ename: Poison
-  id: 13
+  ename: Fairy
+  id: 5
   weaknesses:
-  - Ground
-  - Psychic
+  - Poison
+  - Steel
   resistances:
   - Fighting
-  - Poison
   - Bug
-  - Grass
-  - Fairy
-  immunities: []
-  primColor: {r: 0.92549026, g: 0.36078432, b: 0.5176471, a: 1}
-  secColor: {r: 0.6862745, g: 0.22352943, b: 0.7568628, a: 1}
+  - Dark
+  immunities:
+  - Dragon
+  primColor: {r: 0.93725497, g: 0.43921572, b: 0.93725497, a: 1}
+  secColor: {r: 0.60784316, g: 0.28627452, b: 0.60784316, a: 1}
+  terColor: {r: 0.9607844, g: 0.63529414, b: 0.9607844, a: 1}
