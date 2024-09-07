@@ -19,4 +19,4 @@ MonoBehaviour:
   immunities: []
   primColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 1}
   secColor: {r: 0.8490566, g: 0.8490566, b: 0.8490566, a: 1}
-  terColor: {r: 1, g: 1, b: 1, a: 1}
+  terColor: {r: 0.9056604, g: 0.9056604, b: 0.9056604, a: 1}
