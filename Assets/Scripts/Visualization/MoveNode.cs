@@ -14,7 +14,7 @@ public class MoveNode : MonoBehaviour
     public void SetDisplayedMove(Move move, TypeSO type)
     {
         _outerImg.color = type.primColor;
-        _innerImg.color = type.secColor;
+        _innerImg.color = type.terColor;
         _moveName.text = move.ename;
     }
 }
