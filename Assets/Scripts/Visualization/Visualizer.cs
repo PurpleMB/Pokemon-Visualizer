@@ -33,6 +33,15 @@ public class Visualizer : MonoBehaviour
         }
     }
 
+    public string GetVisualizedPokemonName()
+    {
+        if(_visualizedPoke == null)
+        {
+            return "NoPokemonSelected";
+        }
+        return _visualizedPoke.name.english;
+    }
+
     public bool VisualizePokemon(string pokemonName)
     {
         Pokemon identifiedPoke = _pokemonDb.LookupByName(pokemonName);

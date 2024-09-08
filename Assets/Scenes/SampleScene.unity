@@ -2853,6 +2853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _imgRect: {fileID: 828993855}
   _bg: {fileID: 1227152215}
+  _visualizer: {fileID: 1161490720}
 --- !u!4 &978301162
 Transform:
   m_ObjectHideFlags: 0
@@ -3217,7 +3218,7 @@ MonoBehaviour:
   _backgroundDisplay: {fileID: 831139682}
   _moveDisplay: {fileID: 238022368}
   _debugText: {fileID: 58827950}
-  _errorMsgCol: {r: 1, g: 0.56570184, b: 0.1745283, a: 0}
+  _errorMsgCol: {r: 1, g: 0.92926645, b: 0, a: 1}
   _invalidPokeMsg: 'Error:  A monster could not be identified by that name. Please
     try again.'
   _invalidMoveMsg: 'Error:  A move could not be identified by that name. Please try

@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,6 +9,7 @@ public class Screenshotter : MonoBehaviour
 {
     [SerializeField] private RectTransform _imgRect;
     [SerializeField] private Image _bg;
+    [SerializeField] private Visualizer _visualizer;
 
     public void ExportPokemonVisual()
     {
@@ -32,10 +35,15 @@ public class Screenshotter : MonoBehaviour
         screenshotTex.Apply();
 
         byte[] byteArray = screenshotTex.EncodeToPNG();
-        System.IO.File.WriteAllBytes(Application.dataPath + "/TestPokemon.png", byteArray);
-        Debug.Log("Picture taken");
+        //System.IO.File.WriteAllBytes(Application.dataPath + "/TestPokemon.png", byteArray);
 
-
+        var path = EditorUtility.SaveFilePanel("Export visual as PNG",
+            "", _visualizer.GetVisualizedPokemonName()  + "Graph.png", "png");
+        if(path != null)
+        {
+            System.IO.File.WriteAllBytes(path, byteArray);
+            Debug.Log("Picture taken");
+        }
         _bg.gameObject.SetActive(true);
     }
 }
