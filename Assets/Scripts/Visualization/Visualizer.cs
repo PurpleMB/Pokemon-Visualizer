@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Visualizer : MonoBehaviour
@@ -15,6 +16,11 @@ public class Visualizer : MonoBehaviour
     [SerializeField] private BackgroundDisplay _backgroundDisplay;
 
     [SerializeField] private MoveDisplay _moveDisplay;
+
+    [SerializeField] private TextMeshProUGUI _debugText;
+    [SerializeField] private Color _errorMsgCol;
+    [SerializeField] private string _invalidPokeMsg;
+    [SerializeField] private string _invalidMoveMsg;
 
     private Pokemon _visualizedPoke;
 
@@ -35,6 +41,8 @@ public class Visualizer : MonoBehaviour
             setVisualizedPokemon(identifiedPoke);
             return true;
         }
+        _debugText.text = _invalidPokeMsg;
+        _debugText.color = _errorMsgCol;
         setVisualizedPokemon(_pokemonDb.LookupByName("???"));
         return false;   
     }
@@ -73,6 +81,8 @@ public class Visualizer : MonoBehaviour
             setVisualizedMove(identifiedMove, slot);
             return true;
         }
+        _debugText.text = _invalidMoveMsg;
+        _debugText.color = _errorMsgCol;
         setVisualizedMove(_moveDb.LookupByName("???"), slot);
         return false;
     }

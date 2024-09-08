@@ -112,7 +112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc5540138c6a0fe46a47505b8527832e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _mDic: {fileID: 0}
   _visualizer: {fileID: 0}
   _moveSlot: 0
 --- !u!114 &1511201417902925704
@@ -323,8 +322,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Enter Move in Slot 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 37ffd0e7cac3f104ea673406ddccaaff, type: 2}
+  m_sharedMaterial: {fileID: -1929876055325874868, guid: 37ffd0e7cac3f104ea673406ddccaaff, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -477,8 +476,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 37ffd0e7cac3f104ea673406ddccaaff, type: 2}
+  m_sharedMaterial: {fileID: -1929876055325874868, guid: 37ffd0e7cac3f104ea673406ddccaaff, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
