@@ -35,11 +35,18 @@ public class Screenshotter : MonoBehaviour
         screenshotTex.Apply();
 
         byte[] byteArray = screenshotTex.EncodeToPNG();
-        //System.IO.File.WriteAllBytes(Application.dataPath + "/TestPokemon.png", byteArray);
 
-        var path = EditorUtility.SaveFilePanel("Export visual as PNG",
-            "", _visualizer.GetVisualizedPokemonName()  + "Graph.png", "png");
-        if(path != null)
+        //string path = Application.dataPath + _visualizer.GetVisualizedPokemonName() + "Graph.png";
+
+        //string path = EditorUtility.SaveFilePanel("Export visual as PNG",
+        //    "", _visualizer.GetVisualizedPokemonName()  + "Graph.png", "png");
+        string path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments) + "\\PokeVisualizer";
+        if(!System.IO.Directory.Exists(path))
+        {
+            var dir = System.IO.Directory.CreateDirectory(path);
+        }
+        path +=  "\\" + _visualizer.GetVisualizedPokemonName() + "Graph.png"; 
+        if (path != null)
         {
             System.IO.File.WriteAllBytes(path, byteArray);
             Debug.Log("Picture taken");
