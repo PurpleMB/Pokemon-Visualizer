@@ -64,10 +64,10 @@ public class Screenshotter : MonoBehaviour
             _debugText.color = Color.green;
             Debug.Log("Picture taken");
         }
-        _bg.gameObject.SetActive(true);
 #else
         _debugText.text = "Warning: Currently the web build cannot properly export images.";
         _debugText.color = Color.yellow;
 #endif
+        _bg.gameObject.SetActive(true);
     }
 }
