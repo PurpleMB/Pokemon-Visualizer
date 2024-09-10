@@ -49,6 +49,8 @@ public class Screenshotter : MonoBehaviour
 
         //string path = EditorUtility.SaveFilePanel("Export visual as PNG",
         //    "", _visualizer.GetVisualizedPokemonName()  + "Graph.png", "png");
+
+#if !UNITY_WEBGL
         string path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments) + "\\PokeVisualizer";
         if(!System.IO.Directory.Exists(path))
         {
@@ -63,5 +65,9 @@ public class Screenshotter : MonoBehaviour
             Debug.Log("Picture taken");
         }
         _bg.gameObject.SetActive(true);
+#else
+        _debugText.text = "Warning: Currently the web build cannot properly export images.";
+        _debugText.color = Color.yellow;
+#endif
     }
 }
