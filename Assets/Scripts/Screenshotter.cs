@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,6 +11,7 @@ public class Screenshotter : MonoBehaviour
     [SerializeField] private RectTransform _imgRect;
     [SerializeField] private Image _bg;
     [SerializeField] private Visualizer _visualizer;
+    [SerializeField] private TextMeshProUGUI _debugText;
 
     public void ExportPokemonVisual()
     {
@@ -18,6 +20,13 @@ public class Screenshotter : MonoBehaviour
 
     private IEnumerator CoroutineScreenshot()
     {
+        if(_visualizer.GetVisualizedPokemonName() == "???")
+        {
+            _debugText.text = "Error: Please enter a pokemon to visualize first.";
+            _debugText.color = Color.yellow;
+            yield break;
+        }
+
         _bg.gameObject.SetActive(false);
         yield return new WaitForEndOfFrame();
 
@@ -49,6 +58,8 @@ public class Screenshotter : MonoBehaviour
         if (path != null)
         {
             System.IO.File.WriteAllBytes(path, byteArray);
+            _debugText.text = "Picture saved successfully! It will be in your Documents within a \"PokeVisualizer\" folder";
+            _debugText.color = Color.green;
             Debug.Log("Picture taken");
         }
         _bg.gameObject.SetActive(true);
